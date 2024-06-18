@@ -17,11 +17,19 @@
 #         'd'         floating point
 import array as arr
 
-a = arr.array('i', [1, 2, 3, 4]) # It is the array of integers
-b = arr.array('f', [1.2, 4.5, 2e3]) # It is the array of floats
-
-print(a)
-print(b)
-print(type(a))
+a = arr.array('i', [1, 2, 3, 4])  # It is the array of integers
+b = arr.array('f', [1.2, 4.5, 2e3])  # It is the array of floats
+# print(a)
+# print(b)
+# print(type(a))
 
 # To learn more about array please refer Numpy pdf.
+
+c = arr.array('i', [1, 2, 3, 4])
+c.insert(0, 5)
+c.insert(4, 8)
+c.append(9)
+c.append(10)
+print(c)
+
+# https://docs.python.org/3.11/library/array.html
